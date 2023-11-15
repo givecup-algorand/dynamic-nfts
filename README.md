@@ -1,8 +1,14 @@
-# dynamic-nfts
+# Dynamic NFTs Smart Contract
 
-This project has been generated using AlgoKit. See below for default getting started instructions.
+## 📜 About
 
-# Setup
+This smart contract facilitates the creation and management of dynamic NFTs (Non-Fungible Tokens) on the Algorand blockchain.
+
+Built using Beaker, a framework designed to simplify the development of Algorand smart contracts, it brings a new dimension to NFTs by enabling their attributes to change based on certain triggers or actions. 
+
+
+
+## 🏗 Setup
 
 ### Initial setup
 
@@ -41,7 +47,7 @@ This project has been generated using AlgoKit. See below for default getting sta
 
 > For guidance on `smart_contracts` folder and adding new contracts to the project please see [README](smart_contracts/README.md) on the respective folder.
 
-# Tools
+## 🛠 Tools
 
 This project makes use of Python to build Algorand smart contracts. The following tools are in use:
 
