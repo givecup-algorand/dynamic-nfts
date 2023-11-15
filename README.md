@@ -1,11 +1,25 @@
-# Dynamic NFTs Smart Contract
+# dynamic-nfts
 
 ## 📜 About
 
-This smart contract facilitates the creation and management of dynamic NFTs (Non-Fungible Tokens) on the Algorand blockchain.
+This smart contract is designed to enhance the NFT experience on the Algorand blockchain by enabling dynamic interactions between NFTs. 
 
-Built using Beaker, a framework designed to simplify the development of Algorand smart contracts, it brings a new dimension to NFTs by enabling their attributes to change based on certain triggers or actions. 
+It allows users to personalize and upgrade their digital assets through a unique integration of Accessories and Cup NFTs, utilizing Algorand Standard Assets (ASAs) for these interactions.
 
+Additionally, it introduces a unique feature involving Case NFTs, which users can "open" to receive Cup NFTs based on rarity.
+
+## 🔗 Key Features
+
+1. **Accessory Integration**: Users can send an Accessory NFT from their collection to the smart contract, which will then attach this accessory to their main Cup NFT.
+
+2. **Dynamic NFT Creation**: Upon integrating an accessory, the user receives a new, upgraded Cup NFT, representing the enhanced version of their original NFT.
+
+3. **Case NFTs**: Special Case NFTs can be opened by sending them to the smart contract. Based on the rarity of the Case, users will receive a Cup NFT with characteristics influenced by the Case's rarity.
+
+##  🔧 Implementation Details
+
+- **Using ASAs**: The contract utilizes Algorand Standard Assets to manage the properties and transferability of both the Cup and Accessory NFTs, ensuring secure and efficient transactions.
+- **Dynamic Asset Creation**: The contract dynamically generates new NFTs with updated attributes when Accessories are added or Cases are opened, showcasing the flexibility of ASAs in creating and managing NFTs.
 
 
 ## 🏗 Setup
