@@ -63,10 +63,25 @@ def integrate_accessory(accessory_id: abi.Uint64) -> Expr:
 
 @app.external
 def open_case(case_id: abi.Uint64) -> Expr:
-    # Logic to open a Case NFT
+    # Logic to open a Case NFT and mint a new random Cup NFT
     return Seq(
         Assert(Txn.sender() == app.state.owner),
-        # logic for opening case and generating NFT
+        # Placeholder logic for determining the characteristics of the new Cup NFT
+        # Example: Use the case_id and some other transaction details to determine the characteristics
+        InnerTxnBuilder.Begin(),
+        InnerTxnBuilder.SetFields({
+            TxnField.type_enum: TxnType.AssetConfig,
+            TxnField.config_asset_total: Int(1),
+            TxnField.config_asset_decimals: Int(0),
+            TxnField.config_asset_unit_name: Bytes("CUP"),
+            TxnField.config_asset_name: Bytes("DynamicCupNFT"),
+            # todo: correct domain
+            TxnField.config_asset_url: Bytes(f"https://yourdomain.com/cup/{case_id}"),
+            # Additional fields as required to define the NFT
+        }),
+        InnerTxnBuilder.Submit(),
+        # Update the last minted Cup NFT ID in the global state
+        app.state.last_minted_cup_id.set(InnerTxn.created_asset_id()),
         Approve()
     )
 
