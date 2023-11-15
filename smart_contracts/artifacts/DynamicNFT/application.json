@@ -1,0 +1,88 @@
+{
+    "hints": {
+        "create()void": {
+            "call_config": {
+                "no_op": "CREATE"
+            }
+        },
+        "update_url(string)void": {
+            "call_config": {
+                "no_op": "CALL"
+            }
+        },
+        "get_asset_id()uint64": {
+            "read_only": true,
+            "call_config": {
+                "no_op": "CALL"
+            }
+        }
+    },
+    "source": {
+        "approval": "I3ByYWdtYSB2ZXJzaW9uIDkKaW50Y2Jsb2NrIDAgMSAzCmJ5dGVjYmxvY2sgMHg2MTczNzM2NTc0NWY2OTY0CnR4bmEgQXBwbGljYXRpb25BcmdzIDAKcHVzaGJ5dGVzIDB4NGM1YzYxYmEgLy8gImNyZWF0ZSgpdm9pZCIKPT0KYm56IG1haW5fbDYKdHhuYSBBcHBsaWNhdGlvbkFyZ3MgMApwdXNoYnl0ZXMgMHg0NGZhMGRmNCAvLyAidXBkYXRlX3VybChzdHJpbmcpdm9pZCIKPT0KYm56IG1haW5fbDUKdHhuYSBBcHBsaWNhdGlvbkFyZ3MgMApwdXNoYnl0ZXMgMHg1YmEyMmE4NCAvLyAiZ2V0X2Fzc2V0X2lkKCl1aW50NjQiCj09CmJueiBtYWluX2w0CmVycgptYWluX2w0Ogp0eG4gT25Db21wbGV0aW9uCmludGNfMCAvLyBOb09wCj09CnR4biBBcHBsaWNhdGlvbklECmludGNfMCAvLyAwCiE9CiYmCmFzc2VydApjYWxsc3ViIGdldGFzc2V0aWRjYXN0ZXJfNQppbnRjXzEgLy8gMQpyZXR1cm4KbWFpbl9sNToKdHhuIE9uQ29tcGxldGlvbgppbnRjXzAgLy8gTm9PcAo9PQp0eG4gQXBwbGljYXRpb25JRAppbnRjXzAgLy8gMAohPQomJgphc3NlcnQKY2FsbHN1YiB1cGRhdGV1cmxjYXN0ZXJfNAppbnRjXzEgLy8gMQpyZXR1cm4KbWFpbl9sNjoKdHhuIE9uQ29tcGxldGlvbgppbnRjXzAgLy8gTm9PcAo9PQp0eG4gQXBwbGljYXRpb25JRAppbnRjXzAgLy8gMAo9PQomJgphc3NlcnQKY2FsbHN1YiBjcmVhdGVjYXN0ZXJfMwppbnRjXzEgLy8gMQpyZXR1cm4KCi8vIGNyZWF0ZQpjcmVhdGVfMDoKcHJvdG8gMCAwCml0eG5fYmVnaW4KaW50Y18yIC8vIGFjZmcKaXR4bl9maWVsZCBUeXBlRW51bQppbnRjXzEgLy8gMQppdHhuX2ZpZWxkIENvbmZpZ0Fzc2V0VG90YWwKaW50Y18wIC8vIDAKaXR4bl9maWVsZCBDb25maWdBc3NldERlY2ltYWxzCnB1c2hieXRlcyAweDU1NGU0OTUxNTU0NSAvLyAiVU5JUVVFIgppdHhuX2ZpZWxkIENvbmZpZ0Fzc2V0VW5pdE5hbWUKcHVzaGJ5dGVzIDB4NDQ3OTZlNjE2ZDY5NjM0ZTQ2NTQgLy8gIkR5bmFtaWNORlQiCml0eG5fZmllbGQgQ29uZmlnQXNzZXROYW1lCnB1c2hieXRlcyAweDY4NzQ3NDcwNzMzYTJmMmY2OTZlNjk3NDY5NjE2YzJlNzU3MjZjIC8vICJodHRwczovL2luaXRpYWwudXJsIgppdHhuX2ZpZWxkIENvbmZpZ0Fzc2V0VVJMCml0eG5fc3VibWl0CmJ5dGVjXzAgLy8gImFzc2V0X2lkIgppdHhuIENyZWF0ZWRBc3NldElECmFwcF9nbG9iYWxfcHV0CnB1c2hieXRlcyAweDZmNzc2ZTY1NzIgLy8gIm93bmVyIgp0eG4gU2VuZGVyCmFwcF9nbG9iYWxfcHV0CmludGNfMSAvLyAxCnJldHVybgoKLy8gdXBkYXRlX3VybAp1cGRhdGV1cmxfMToKcHJvdG8gMSAwCml0eG5fYmVnaW4KaW50Y18yIC8vIGFjZmcKaXR4bl9maWVsZCBUeXBlRW51bQpmcmFtZV9kaWcgLTEKZXh0cmFjdCAyIDAKaXR4bl9maWVsZCBDb25maWdBc3NldFVSTAppdHhuX3N1Ym1pdAppbnRjXzEgLy8gMQpyZXR1cm4KCi8vIGdldF9hc3NldF9pZApnZXRhc3NldGlkXzI6CnByb3RvIDAgMQppbnRjXzAgLy8gMApieXRlY18wIC8vICJhc3NldF9pZCIKYXBwX2dsb2JhbF9nZXQKZnJhbWVfYnVyeSAwCnJldHN1YgoKLy8gY3JlYXRlX2Nhc3RlcgpjcmVhdGVjYXN0ZXJfMzoKcHJvdG8gMCAwCmNhbGxzdWIgY3JlYXRlXzAKcmV0c3ViCgovLyB1cGRhdGVfdXJsX2Nhc3Rlcgp1cGRhdGV1cmxjYXN0ZXJfNDoKcHJvdG8gMCAwCnB1c2hieXRlcyAweCAvLyAiIgp0eG5hIEFwcGxpY2F0aW9uQXJncyAxCmZyYW1lX2J1cnkgMApmcmFtZV9kaWcgMApjYWxsc3ViIHVwZGF0ZXVybF8xCnJldHN1YgoKLy8gZ2V0X2Fzc2V0X2lkX2Nhc3RlcgpnZXRhc3NldGlkY2FzdGVyXzU6CnByb3RvIDAgMAppbnRjXzAgLy8gMApjYWxsc3ViIGdldGFzc2V0aWRfMgpmcmFtZV9idXJ5IDAKcHVzaGJ5dGVzIDB4MTUxZjdjNzUgLy8gMHgxNTFmN2M3NQpmcmFtZV9kaWcgMAppdG9iCmNvbmNhdApsb2cKcmV0c3Vi",
+        "clear": "I3ByYWdtYSB2ZXJzaW9uIDkKcHVzaGludCAwIC8vIDAKcmV0dXJu"
+    },
+    "state": {
+        "global": {
+            "num_byte_slices": 1,
+            "num_uints": 1
+        },
+        "local": {
+            "num_byte_slices": 0,
+            "num_uints": 0
+        }
+    },
+    "schema": {
+        "global": {
+            "declared": {
+                "asset_id": {
+                    "type": "uint64",
+                    "key": "asset_id",
+                    "descr": ""
+                },
+                "owner": {
+                    "type": "bytes",
+                    "key": "owner",
+                    "descr": ""
+                }
+            },
+            "reserved": {}
+        },
+        "local": {
+            "declared": {},
+            "reserved": {}
+        }
+    },
+    "contract": {
+        "name": "DynamicNFT",
+        "methods": [
+            {
+                "name": "create",
+                "args": [],
+                "returns": {
+                    "type": "void"
+                }
+            },
+            {
+                "name": "update_url",
+                "args": [
+                    {
+                        "type": "string",
+                        "name": "v"
+                    }
+                ],
+                "returns": {
+                    "type": "void"
+                }
+            },
+            {
+                "name": "get_asset_id",
+                "args": [],
+                "returns": {
+                    "type": "uint64"
+                }
+            }
+        ],
+        "networks": {}
+    },
+    "bare_call_config": {}
+}

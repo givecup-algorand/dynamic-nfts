@@ -1,0 +1,32 @@
+{
+    "name": "DynamicNFT",
+    "methods": [
+        {
+            "name": "create",
+            "args": [],
+            "returns": {
+                "type": "void"
+            }
+        },
+        {
+            "name": "update_url",
+            "args": [
+                {
+                    "type": "string",
+                    "name": "v"
+                }
+            ],
+            "returns": {
+                "type": "void"
+            }
+        },
+        {
+            "name": "get_asset_id",
+            "args": [],
+            "returns": {
+                "type": "uint64"
+            }
+        }
+    ],
+    "networks": {}
+}
